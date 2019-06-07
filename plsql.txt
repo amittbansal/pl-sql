@@ -1,0 +1,74 @@
+                                          pl/sql\
+
+block-structured language
+
+1. declaration(optional)
+2. executable commands(compulsory)
+3. exception handling (optional)
+
+block - structure of pl/sql:-
+
+
+declare
+ <declaration section>
+
+Begin
+   <executable commands>
+exception
+    <exception handlimg>
+end
+
+program for print :
+
+Declare
+
+  Begin
+  
+     dbms_output.putline('Hello World');
+  end;
+
+
+ after this only procedure get successfully completed for output show we have to write
+
+set serverout on
+
+relational operator
+
+for not equal to :--    < >,^=,`=
+
+assignment operator  :=
+comparison =
+concatination  ||
+squ8are  **
+
+wap to add two number ?
+
+declare
+a integer := 10;
+b integer := 20;
+c integer;
+begin
+c := a+b;
+dbms_output.put_line('sum of the two number a and b is ='||c);
+end;
+
+cl scr use to clear the screen
+
+
+wap to check whether it is positive or negative
+
+declare
+  x  number(3);
+begin
+ x:=&x;
+if x>0 then
+dbms_output.put_line('positive');
+else
+dbms_output.put_line('negative');
+end if;
+end;
+
+comments use :-
+
+//   single line
+/* */  multiline
